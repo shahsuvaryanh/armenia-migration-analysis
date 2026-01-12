@@ -44,8 +44,8 @@ The findings suggest that reducing migration pressures in Armenia requires:
 Without structural labor market reforms, migration is likely to remain a rational economic response for many Armenians.
 
 ## Repository Structure
-├── Final_project_DV.Rmd # Data analysis and visualizations
-├── Final_45.pdf # Final rendered report
+├── Final_project_DV.Rmd # Data analysis and visualisations
+├── final_report.pdf # Final rendered report
 └── README.md
 
 ## Notes
