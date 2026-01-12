@@ -1,0 +1,1174 @@
+---
+title: "From Workforce to Flight: How Employment Conditions Drive Migration in Armenia"
+subtitle: "Large Leaving to Work, Working to Leave: Migration as an Economic Strategy in Armenia"
+author:
+  - "Liana Zhamkochyan, Anahit Nazaretyan, Meline Mamikonyan, Shake Simonyan, Hayk Shahsuvaryan"
+date: "2025-07-13"
+output:
+  pdf_document:
+    latex_engine: pdflatex
+---
+
+\begin{center}
+\textbf{Course:} DS 116 Data Visualization \\
+\textbf{Instructor:} Habet Madoyan
+\end{center}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center",
+  fig.width = 7,
+  fig.height = 4
+)
+```
+Course: DS 116 Data Visualization 
+Instructor: Habet Madoyan 
+
+## Abstract. 
+This project examines the intersection of migration, working conditions, and income inequality in Armenia, combining two lines of analysis: the actual income trends of migrants between 2019 and 2023, and the migration intentions of the general population from 2019 to 2024. Using labor force data and visualizations, the study shows that stagnant wages and persistent inequality among migrants reflect broader labor market issues. In parallel, a significant share of Armenians—both employed and unemployed—express a desire to temporarily or permanently emigrate, often driven by job dissatisfaction rather than joblessness. These findings suggest that improving working conditions is key to addressing Armenia’s migration challenges. Without reforms in job quality, wage equity, and career opportunities, migration pressures are likely to persist
+
+## Keywords. 
+migration, working conditions, labor market, Armenia, migration intent, temporary migration, permanent emigration, job dissatisfaction, Underemployment
+
+## Introduction. 
+In the face of globalization, migration has become a defining feature of Armenia's labor landscape. While unemployment has often been cited as a key push factor, deeper issues related to job quality, pay disparity, and limited career growth increasingly shape migration decisions. This project explores how working conditions influence not only the volume of emigration but also the experiences and income outcomes of migrants who remain economically active abroad.  
+In addition to analyzing income trends among actual migrants from 2019 to 2023, the project also investigates migration intentions—both temporary and permanent—between 2019 and 2024. These two perspectives provide a more comprehensive view of how economic dissatisfaction and labor market conditions contribute to Armenia’s migration patterns.  
+
+This study seeks to answer the following research question:
+How do working conditions influence migration patterns and income disparities among Armenian labor migrants between 2019 and 2023?  
+
+Main hypothesis:  
+We hypothesize that poor working conditions and income inequality are significant drivers of both actual migration and migration intent among working-age Armenians.
+
+## Literature Review. 
+Migration and Economic Reasons
+Migration is influenced by many factors, but economic reasons such as job opportunities and income are often the most important. People tend to move to places where they expect to earn more and have better living conditions. However, it is not only unemployment that causes migration. Poor job quality, lack of career growth, and underemployment also encourage people to leave their home country in search of better work.
+
+Employment Conditions and Migration
+Many studies show that people decide to migrate even if they have jobs, especially when those jobs offer low wages, little security, or poor working conditions. Job dissatisfaction and unstable employment push people to seek better opportunities abroad. This pattern is common in regions facing economic difficulties, where workers face challenges finding good jobs.
+
+Brain Drain and Skilled Workers
+The migration of skilled and educated workers, often called “brain drain,” can create serious problems for the home country. Losing professionals and experts limits the country’s ability to grow, innovate, and develop economically. In many countries, both low-skilled workers and highly educated individuals migrate, causing challenges across different parts of the labor market.
+
+Effects of Crises on Migration
+Crises such as pandemics, wars, or economic downturns can temporarily reduce migration because of travel restrictions and uncertainty. However, these events do not usually change the long-term reasons people migrate. Economic needs and job opportunities remain the main drivers even after crises pass.
+
+Migration in Armenia
+In Armenia, poor job opportunities and political factors are important reasons why many people choose to migrate. The country has experienced significant emigration of young and working-age adults, raising concerns about the future workforce and economic growth. Most Armenian migrants move to Russia due to strong historical, social, and economic connections between the two countries.
+
+# Methodology. 
+
+This study uses a combination of survey data analysis and literature review to explore the relationship between migration, income, and working conditions in Armenia. The goal is to identify patterns in migrant income and migration intent, and to understand how labor market factors influence migration decisions
+
+## Data Collection:
+
+We used publicly accessible datasets sourced from reputable and authoritative organizations, including the CRRC Armenia website, the Armenian Statistical Committee (ArmStat) and Trading Economics.  
+
+## Data Cleaning: 
+
+During the data cleaning process, datasets from multiple years were merged into a single dataset to allow for analysis over time. Entries with missing values or respondents who chose not to answer relevant questions were removed to ensure the reliability of the results.  
+
+## Data Analysis:
+
+Our analysis investigates migration patterns in Armenia from 2013 to 2025, focusing on their relationship with employment conditions. The analysis follows several key steps:
+
+Descriptive Statistics and Temporal Trends
+We start by summarizing the volume and yearly trends of long-term migration (stays of three months or more). This includes identifying significant fluctuations linked to major events such as the COVID-19 pandemic and the 2020 Nagorno-Karabakh conflict.
+
+Demographic and Educational Profile Analysis
+Using age and education data, we examine the demographic selectivity of migration. This helps identify which groups—especially working-age adults and skilled laborers—are most likely to migrate, revealing structural migration patterns across different population segments.
+
+Migration Type and Motivations
+Migration flows are categorized by type (internal moves, first-time international migration, and return migration) and primary reasons, with a focus on job-related causes. This step clarifies the economic motivations driving migration versus family reunification or other factors.
+
+Employment Status and Job Satisfaction Comparisons
+We compare employment rates and job satisfaction levels between migrants and non-migrants to uncover disparities in labor market engagement. The analysis explores how these factors correlate with migration intentions and actual migration behavior.
+
+Sectoral and Occupational Distribution
+The occupational composition of migrants is assessed, differentiating between private-sector and public-sector workers, as well as low-skilled and highly skilled professionals. This enables evaluation of sector-specific vulnerabilities and the extent of brain drain.
+
+Income Distribution and Inequality Assessment
+Migrant income data is analyzed to understand economic conditions, wage disparities, and job quality. Temporal trends highlight the impact of economic shocks on income stability and access to better-paying employment.
+
+Geographic Destination Patterns
+Finally, we analyze the primary destination countries of Armenian migrants, emphasizing Russia’s dominant role, to contextualize migration flows within regional social and economic networks.
+
+# Result and Discussion
+
+Results and Discussion
+The analysis of migration patterns in Armenia from 2018 to 2024 reveals notable fluctuations in long-term migration rates, with a peak of 5.6% in 2018 followed by a gradual decline to approximately 3.0% by 2023. This downward trend, particularly sharp during 2020–2021, coincides with major external events such as the COVID-19 pandemic and the Nagorno-Karabakh conflict, which significantly disrupted mobility and created uncertainty. Despite these interruptions, migration remains a persistent feature of Armenia’s demographic landscape, suggesting that underlying economic and social factors continue to drive migration decisions.
+
+Demographically, migration is highly selective, concentrated mainly among working-age adults between 25 and 44 years old. The relatively low migration rates observed among children and older adults indicate that migration is predominantly an individual choice made during prime working years, rather than a family-wide movement. This age-selective pattern results in a demographic “hourglass” effect, where the working population diminishes while younger and older dependent populations remain stable. Such trends raise concerns about the sustainability of Armenia’s workforce and long-term economic development.
+
+The educational composition of migrants highlights a broad spectrum of skill levels, ranging from those with secondary education to highly educated professionals with postgraduate degrees. The significant presence of skilled migrants confirms the ongoing challenge of brain drain, which threatens to limit Armenia’s capacity for innovation and economic growth. Furthermore, the diversity in educational backgrounds shows that migration pressures are not confined to any single skill group but affect workers across the labor market.
+
+In terms of migration motivations, international migration dominates, with job-related reasons accounting for 50% to 70% of cases annually. Family reunification and other reasons make up smaller shares. Importantly, many migrants were employed at the time of migration but reported dissatisfaction with their job quality, wages, or security. This finding indicates that migration is driven not just by unemployment but also by the search for better-quality employment. Even during economic shocks such as the pandemic, job-related migration remains a key feature, underlining the structural nature of labor market challenges in Armenia.
+
+Employment data further reveal that migrants have higher employment rates than non-migrants—around 60% compared to 40%—but tend to report lower job satisfaction overall. Migration intent is notably higher among private-sector employees than those in the public sector, suggesting that private-sector jobs may involve greater insecurity or lower satisfaction. These insights highlight that simply having a job does not prevent migration if the job conditions are poor.
+
+Income and occupational analyses show a wide range of economic experiences among migrants. Many work in low-paid or informal jobs, while a smaller group occupies skilled or managerial positions with better pay. This dual pattern suggests systemic labor market issues affecting both low-skilled and highly skilled workers, which could have negative consequences for national productivity and economic advancement.
+
+Finally, Armenia’s migration flows are geographically concentrated, with Russia consistently serving as the primary destination for 85% to 90% of international migrants. This strong link reflects historical, social, and economic ties and has important implications for migration policy and bilateral cooperation.
+
+```{r}
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(forcats)
+library(stringr)
+library(scales)
+library(tidyverse)
+library(readr)
+```
+
+```{r}
+files_years <- list(
+  "2016" = "LFS_2016_E 2.xlsx",
+  "2018" = "LFS_2018_AllPop_05.03_e.xlsx",
+  "2019" = "LFS_Year_2019(residents).xlsx",
+  "2020" = "LFS_Year_2020 Dataset (residents).xlsx",
+  "2021" = "LFS_Year_2021_Dataset (residents).xlsx",
+  "2022" = "LFS_Year_2022 Dataset (residents).xlsx",
+  "2023" = "LFS_2023 Dataset (residents) 2.xlsx"
+)
+
+```
+
+
+```{r}
+sheets <- rep("LFS_Year_2019", length(files_years))
+names(sheets) <- names(files_years)
+sheets["2016"] <- "LFS_2016"     
+sheets["2018"] <- "AllPop"     
+sheets["2020"] <- "LFS_Year_2020"
+sheets["2021"] <- "Rawdata"
+sheets["2022"] <- "LFS_Year_2022"
+sheets["2023"] <- "LFS_Year_2023"
+```
+
+```{r}
+vars <- c(
+  "ID_HH", "IDmem",       
+  "A3", "A5",             
+  "Age", "Age_16groups", 
+  "B3", "B7", "B11",     
+  "B14", "B15",       
+  "D1", "D14_1", "E14_1", 
+  "C3", "C4", "C5", "C8", "C9",     
+  "B19", "B20_5group", "B21",       
+  "E2_9groups_ISCO_88", "E4_21groups_NACE_rev_2.2",     
+  "F2_9group", "F3_21group",                            
+  "F2_9groups_ISCO_88", "F3_21groups_NACE_rev_2.2"      
+)
+```
+
+```{r}
+read_and_clean_lfs <- function(file, sheet, year_str) {
+  year <- as.integer(year_str)
+  df <- read_excel(file, sheet = sheet)
+  
+  if (year == 2016) {
+    df <- df %>%
+      mutate(
+        C3 = case_when(B19 %in% 1:4 ~ 1, B19 == 5 ~ 2, TRUE ~ NA_real_),
+        C4 = B20_5group,
+        C9 = B21,
+        Age = ifelse(!is.na(B14), 2016 - B14, NA),
+        B7 = B15,
+        B3 = B11
+      )
+  }
+
+  if (year %in% c(2018, 2019, 2020) && "Age" %in% names(df)) {
+    df <- df %>%
+      mutate(
+        Age_16groups = cut(
+          Age,
+          breaks = c(-1, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 69, 74, Inf),
+          labels = 1:16,
+          right = TRUE
+        ),
+        Age_16groups = as.integer(as.character(Age_16groups))
+      )
+  }
+
+  df <- df[, intersect(vars, names(df))]
+  df$year <- year
+  if ("Age" %in% names(df)) {
+  df <- df %>% select(-Age)
+}  
+  
+  return(df)
+}
+```
+
+
+```{r}
+lfs_list <- mapply(
+  read_and_clean_lfs, 
+  file = files_years, 
+  sheet = sheets, 
+  year = names(files_years), 
+  SIMPLIFY = FALSE
+)
+
+lfs_all <- bind_rows(lfs_list)
+```
+
+```{r}
+lfs_all <- lfs_all %>%
+  mutate(
+    ISCO = case_when(
+      year == 2021 ~ E2_9groups_ISCO_88,
+      year == 2023 ~ F2_9groups_ISCO_88,
+      year %in% c(2018, 2020, 2022) ~ F2_9group,
+      TRUE ~ NA_real_
+    ),
+    NACE = case_when(
+      year == 2021 ~ E4_21groups_NACE_rev_2.2,
+      year == 2023 ~ F3_21groups_NACE_rev_2.2,
+      year %in% c(2018, 2020) ~ F3_21group,
+      year == 2022 ~ F3_21groups_NACE_rev_2.2,
+      TRUE ~ NA_real_
+    )
+  )
+```
+
+```{r}
+lfs_all <- lfs_all %>%
+  select(-any_of(c(
+    "E2_9groups_ISCO_88", "F2_9groups_ISCO_88", "F2_9group",
+    "E4_21groups_NACE_rev_2.2", "F3_21groups_NACE_rev_2.2", "F3_21group"
+  )))
+```
+
+
+```{r}
+mig_rate <- lfs_all %>%
+  filter(!is.na(C4)) %>%
+  group_by(year) %>%
+  summarize(
+    migrant_share = mean(C4 == 1),
+    n = n()
+  )
+```
+
+```{r}
+lfs_all <- lfs_all %>%
+  filter(year != 2016) 
+```
+
+```{r}
+mig_rate <- lfs_all %>%
+  filter(!is.na(C4)) %>%
+  group_by(year) %>%
+  summarize(
+    migrant_share = mean(C4 == 1),
+    n = n()
+  )
+```
+
+
+```{r}
+data_pred <- read_csv("Armenia-Unemployment-Rate-Unemployment-Rate-2025-08-01-23-22.csv", col_names = FALSE)
+colnames(data_pred) <- c("Year", "Real", "Predicted")
+
+data_pred <- data_pred %>% mutate(Year = as.integer(Year))
+
+filtered_data <- data_pred %>% filter(Year >= 2014 & Year <= 2025)
+
+long_data <- filtered_data %>%
+  pivot_longer(cols = c(Real, Predicted), names_to = "Type", values_to = "Rate") %>%
+  mutate(Rate = as.numeric(Rate)) %>%
+  drop_na(Rate)
+
+valid_years <- unique(long_data$Year)
+```
+
+```{r}
+
+file_years <- list(
+  "2013" = "2013crrc.xlsx",
+  "2015" = "2015crrc.xlsx",
+  "2017" = "2017crrc.xlsx",
+  "2019" = "2019crrc2.xlsx",
+  "2024" = "2024crrc.csv"
+)
+```
+
+```{r}
+theme_lfs <- function(
+  base_size = 13,
+  x_angle = 45,
+  legend_position = "bottom"
+) {
+  theme_minimal(base_size = base_size) +
+    theme(
+      plot.title = element_text(color = '#2a2b2b', face = "bold", size = base_size, hjust = 0.5),
+      plot.subtitle = element_text(size = base_size - 2, color = "grey40", hjust = 0.5),
+      axis.title = element_text(face = "bold"),
+      axis.text.x = element_text(angle = x_angle, hjust = 1),
+      legend.position = legend_position,
+      legend.text = element_text(size = 7),   
+      legend.title = element_text(size = 9, face = "bold"),
+      legend.spacing.x = unit(0.001, "cm"),
+      panel.grid.major.y = element_line(color = "grey90"),
+      panel.grid.major.x = element_blank(),
+      panel.grid.minor = element_blank(),
+      plot.caption = element_text(size = base_size - 4, face = "italic", hjust = 1)
+    )
+}
+```
+
+The temporal evolution of Armenia's migration patterns shows significant fluctuations shaped by both internal conditions and external events. Long-term migration (defined as stays of three months or longer) peaked at 5.6% of the population in 2018, declined to 4.8% in 2019, and dropped sharply to 3.4% in 2020. Migration rates continued to fall to 2.7% in 2021 before stabilizing at around 3.0% in 2022–2023.
+
+The sharp decline in 2020–2021 can be largely attributed to the combined effects of the COVID-19 pandemic—such as border closures and quarantine measures—and the 2020 Nagorno-Karabakh war, which created widespread uncertainty and disrupted regional mobility.
+
+
+```{r}
+ggplot(mig_rate, aes(x = as.numeric(year), y = migrant_share)) +
+  geom_area(fill = "#2E86AB", alpha = 0.6) +
+  geom_line(color = "#2E86AB", size = 1.2) +
+  geom_point(shape = 21, fill = "white", color = "#2E86AB", size = 2.5, stroke = 1.5) +
+  geom_text(aes(label = percent(migrant_share, 0.1)), 
+            vjust = -0.8, size = 3.5, color = "grey20", fontface = "bold") +
+  scale_y_continuous(labels = percent_format(accuracy = 1), 
+                     expand = expansion(mult = c(0, 0.1))) +
+  scale_x_continuous(breaks = mig_rate$year, expand = expansion(mult = 0.02)) +
+  labs(
+    title = "Migration Patterns in Armenia: 3+ Month Stays",
+    subtitle = "Share of population engaged in long-term migration by year",
+    x = "Year", y = "Share of Migrants (%)",
+    caption = "Note: Migration defined as stays of 3 months or longer") + 
+  theme_lfs()
+```
+Migration patterns in Armenia from 2018 to 2023 demonstrate clear demographic selectivity, with the highest migration rates observed among the working-age population, particularly those aged 20 to 44. Within this range, individuals between 25 and 39 years old consistently exhibit the most intense migration activity, with migration shares often between 10% and 15%. In contrast, migration rates among younger people under 20 and adults over 44 remain significantly lower throughout the period. This disparity highlights that migration is primarily driven by those in their prime working and family-forming years. The stable age-specific migration rates across these years suggest that this pattern is structural, shaped by underlying socio-economic factors and life-cycle stages, rather than being a temporary response to short-term events.
+```{r}
+age_labels <- c(
+  "0–4", "5–9", "10–14", "15–19", "20–24", "25–29", "30–34", "35–39",
+  "40–44", "45–49", "50–54", "55–59", "60–64", "65–69", "70–74", "75+"
+)
+
+lfs_all %>%
+  filter(C4 == 1, !is.na(Age_16groups)) %>%
+  count(year, Age_16groups) %>%
+  group_by(year) %>%
+  mutate(share = n / sum(n)) %>%
+  
+  ggplot(aes(x = factor(year), y = factor(Age_16groups, labels = age_labels), fill = share)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient(
+    high = "#f9d80f", low = "#0391b5",
+    labels = scales::percent_format(),
+    name = "Share"
+  ) +
+  labs(
+    title = "Migration Patterns by Age Group in Armenia",
+    subtitle = "Distribution of migrants across age groups and years (3+ month migration)",
+    x = "Year",
+    y = "Age Group",
+    caption = "Note: Darker colors indicate higher migration rates within each age group"
+  ) 
+
+```
+Migration in Armenia reveals a distinct pattern of demographic selectivity, with young and middle-aged adults—particularly those between the ages of 25 and 34, as well as 35 to 44—making up the largest share of migrants. This concentration suggests that migration is primarily an individual choice made during prime working years, rather than a family-based decision involving all household members. Supporting this, migration rates among children aged 0 to 14 remain relatively low, indicating that families tend to stay behind while working-age individuals seek opportunities elsewhere. In contrast, migration rates sharply decline among older adults aged 55 and above, reflecting practical challenges such as health concerns, family responsibilities, and different economic motivations that reduce the likelihood of moving at later stages of life.
+
+This age-selective migration creates what can be described as a demographic “hourglass” effect within Armenia’s population structure. The net loss of working-age adults results in a shrinking labor force, while the populations of dependent children and elderly remain comparatively stable. Such a shift poses significant socio-economic challenges for the country. The emigration of prime working-age individuals leads to a reduction in Armenia’s human capital—especially in terms of skilled and experienced workers—which may limit the country’s potential for innovation, entrepreneurship, and sustainable economic development over the long term. Addressing these demographic changes is critical for policy makers aiming to retain talent and promote balanced growth across all age groups.
+```{r}
+lfs_all %>%
+  filter(C4 == 1, !is.na(Age_16groups)) %>%
+  mutate(age_group_label = factor(Age_16groups, labels = age_labels)) %>%
+  ggplot(aes(x = age_group_label, y = 1)) +
+  geom_jitter(width = 0.3, height = 0.1, alpha = 0.9, color = "#0391b5", size = 0.8) +
+  scale_y_continuous(NULL, breaks = NULL) +
+  labs(
+    title = "Age Distribution of Migrants",
+    subtitle = "Each dot represents a migrant with a stay of 3+ months, grouped by age",
+    x = "Age Group",
+    y = NULL
+  ) + theme_lfs()
+```
+The educational backgrounds of Armenian migrants vary widely, encompassing levels from basic education to postgraduate degrees. Most migrants have completed secondary or high school education, vocational training, or hold bachelor’s degrees, which together constitute the largest groups within the migrating population. Although fewer migrants possess postgraduate qualifications and specialized certifications, this group remains significant, highlighting the persistent issue of “brain drain” as Armenia loses skilled and educated workers. This diversity in educational attainment indicates that migration pressures span across various segments of the labor market, rather than affecting only specific skill groups. The notable presence of well-educated individuals among migrants raises concerns about the country’s future capacity for innovation and economic development. Moreover, the broad range of education levels among migrants suggests that challenges such as limited job opportunities, inadequate wages, and restricted career growth impact workers at all levels. Therefore, addressing these issues requires inclusive and comprehensive policy measures targeting the entire workforce.
+```{r}
+
+edu_labels <- c(
+  "1" = "Illiterate",
+  "2" = "No Primary",
+  "3" = "Primary",
+  "4" = "Basic",
+  "5" = "Secondary/High",
+  "6" = "Vocational",
+  "7" = "Sec. Specialized",
+  "8" = "Bachelor's",
+  "9" = "Master's",
+  "10" = "Certified Spec.",
+  "11" = "Postgraduate"
+)
+
+lfs_all %>%
+  filter(!is.na(B7), C4 == 1) %>%
+  mutate(
+    B7_char = as.character(B7),
+    edu_label = edu_labels[B7_char],
+    edu_label = ifelse(is.na(edu_label), "Unknown", edu_label),
+    edu_label = fct_relevel(factor(edu_label),
+      "Illiterate", "No Primary", "Primary", "Basic",
+      "Secondary/High", "Vocational", "Sec. Specialized",
+      "Bachelor's", "Master's", "Certified Spec.", "Postgraduate", "Unknown"
+    )
+  ) %>%
+  ggplot(aes(x = edu_label, y = 1)) +
+  geom_jitter(width = 0.3, height = 0.1, alpha = 0.7, size = 1.2, color = "#0391b5") +
+  scale_y_continuous(NULL, breaks = NULL) +
+  labs(
+    title = "Migrant Distribution by Education Level",
+    subtitle = "Each point represents a migrant's highest completed education level",
+    x = "Education Level",
+    y = NULL,
+    caption = "Note: Based on migrants with valid education data"
+  ) +
+  theme_lfs()
+
+```
+The analysis of migration types over a FIVE-year period shows that international departures consistently make up the largest share of migration flows, typically accounting for 40% to 60% of total cases. This highlights the dominance of outward international mobility in Armenia’s migration dynamics.
+
+Internal migration—movements within Armenia—along with first-time migrations abroad, represent the next largest categories, each comprising a significant portion of the overall migration landscape. In contrast, migrants returning from abroad account for a much smaller share throughout this period. This pattern indicates that Armenia experiences a net migration loss, with limited instances of circular or return migration.
+
+The data suggest a migration system characterized by substantial outward mobility and relatively low rates of return. This raises challenges related to population retention and may have notable demographic and economic impacts due to sustained emigration.
+```{r big_base_plot, fig.width=10, fig.height=6, out.width='100%', echo=FALSE}
+lfs_all %>%
+  filter(C4 == 1, !is.na(C5)) %>%
+  count(year, C5) %>%
+  group_by(year) %>%
+  mutate(share = n / sum(n)) %>%
+  ggplot(aes(x = factor(year), y = share, fill = factor(C5))) +
+  geom_col(position = "fill") +
+  scale_fill_manual(
+    values = c(
+      "1" = "#37bbca",       
+      "2" = "#f9d80f",            
+      "3" = "#0391b5",                  
+      "4" = "#d3de16",          
+      "5" = "#ff7b17"
+    ),
+    labels = c(
+      "1" = "Internal (Other Province)",
+      "2" = "First-time Abroad",
+      "3" = "Returned from Abroad",
+      "4" = "Moved within Armenia",
+      "5" = "Departed Abroad"
+    )
+  ) +
+  labs(
+    title = "Migration Type Distribution by Year",
+    subtitle = "Proportion of migrants by migration type across years",
+    x = "Year", y = "Share", fill = "Migration Type",
+    caption = "Note: Categories represent internal and international migration flows."
+  ) + theme_lfs()
+```
+
+
+Between 2018 and 2023, migration in Armenia that lasted three months or longer was predominantly driven by job-related reasons, which consistently accounted for between 50% and 70% of all migration cases. This steady and dominant trend clearly highlights employment as the primary motivation behind people’s decisions to migrate. Following job-related causes, family reunification was the second most common reason for migration, representing approximately 15% to 25% of cases during this period. Other factors, such as the conclusion of a job contract, changes in permanent residence, and various miscellaneous reasons, made up smaller but still meaningful portions of migration drivers.
+
+Notably, even during challenging times such as the COVID-19 pandemic, when global mobility was restricted, job-related reasons remained the leading cause of migration. This persistence underscores the crucial role economic factors play in shaping the migration patterns of Armenians. These findings align with broader observations regarding unemployment and labor market difficulties in the country, reinforcing the understanding that economic conditions continue to be the main force influencing individuals’ decisions to leave Armenia in search of better opportunities.
+```{r}
+lfs_all <- lfs_all %>%
+  mutate(
+    C8_label = case_when(
+      C8 == 1 ~ "Job",
+      C8 == 2 ~ "Job Search",
+      C8 == 3 ~ "End of Job",
+      C8 == 4 ~ "Family",
+      C8 == 5 ~ "Permanent Residence",
+      TRUE    ~ "Other"
+    )
+  )
+
+top_reasons <- lfs_all %>%
+  filter(C4 == 1, !is.na(C8_label)) %>%
+  count(C8_label, sort = TRUE) %>%
+  mutate(share = n / sum(n)) %>%
+  filter(share > 0.03) %>%
+  pull(C8_label)
+
+lfs_all <- lfs_all %>%
+  mutate(C8_main = if_else(C8_label %in% top_reasons, C8_label, "Other"))
+
+lfs_all %>%
+  filter(C4 == 1, !is.na(C8_main)) %>%
+  count(year, C8_main) %>%
+  group_by(year) %>%
+  mutate(prop = n / sum(n)) %>%
+  ggplot(aes(x = factor(year), y = prop, fill = C8_main)) +
+  geom_col(position = "fill") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(
+    values = c(
+      "Job" = "#0391b5",
+      "Job Search" = "#7fbf7b",
+      "End of Job" = "#37bbca",
+      "Family" = "#f9d80f",
+      "Permanent Residence" = "#ff7b17",
+      "Other" = "#d3de16"
+    )
+  ) +
+  labs(
+    title = "Migration Purposes in Armenia by Year",
+    subtitle = "Primary reasons for 3+ month migration (only >3% shown)",
+    x = "Year", y = "Share of Migrants (%)",
+    fill = "Purpose"
+  ) + theme_lfs()
+```
+
+
+A striking and somewhat unexpected finding from our analysis is that migrants tend to have significantly higher employment rates compared to non-migrants. Specifically, approximately 60% of migrants are employed at the time of their migration, whereas the employment rate among non-migrants is closer to 40%. This data challenges the common assumption that migration is primarily caused by unemployment. Instead, it reveals a more complex and nuanced reality behind migration decisions. Many individuals who choose to leave Armenia are actually employed, but their reasons for migrating go beyond simply lacking a job.
+
+The key issues appear to be underemployment, inadequate wages, and generally poor job quality. Many migrants report that although they have jobs, these positions often fail to provide sufficient income to meet their needs or to support their families comfortably. In addition, job instability and the lack of opportunities for career advancement contribute heavily to their decision to seek work abroad. These conditions create dissatisfaction and uncertainty, pushing workers to look for better prospects in other countries.
+
+This finding highlights that Armenia’s migration challenges cannot be addressed solely by creating more jobs. Instead, there is a critical need to improve the overall quality of employment available within the country. Policies should focus on raising wages, increasing job security, and enhancing working conditions to retain skilled and motivated workers. Without such improvements, many workers will continue to view migration as the most viable economic strategy, even if they are currently employed.
+```{r}
+lfs_all %>%
+  filter(!is.na(C4), !is.na(D1)) %>%
+  mutate(migrant = C4 == 1, employed = D1 == 1) %>%
+  group_by(migrant) %>%
+  summarise(rate = mean(employed), .groups = "drop") %>%
+  ggplot(aes(x = factor(migrant, labels = c("Non-Migrant", "Migrant")), y = rate)) +
+  geom_col(fill = "#0391b5", width = 0.6) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(
+    title = "Employment Rate by Migration Status",
+    subtitle = "Comparison of employment rates between migrants and non-migrants",
+    x = "Migration Status",
+    y = "Employment Rate (%)"
+  ) + theme_lfs()
+```
+
+
+Armenia’s labor market performance reveals a substantial divergence between policy aspirations and economic reality. The government’s Strategic Development Program projected unemployment would decline steadily from 17.2% in 2014 to 10% by 2025. However, actual unemployment began at 17.5% in 2014 and declined more gradually to 13.9% by 2025, creating a persistent 3–4 percentage point gap that has remained stable since 2017.
+
+This disparity reflects several critical factors. The government’s projections appear to have underestimated the impact of structural economic challenges, regional conflicts, and global economic conditions. The persistence of this gap points to deeper labor market issues, including skills mismatches, insufficient job creation in key sectors, and the complex effects of emigration on labor supply and demand dynamics.
+
+While Armenia has made real progress in reducing unemployment, the failure to meet targets has broader implications. Higher-than-expected unemployment may have acted as a push factor for emigration, creating a feedback loop in which the loss of working-age population further complicates efforts to grow the economy and expand employment opportunities.
+```{r}
+ggplot(long_data, aes(x = factor(Year), y = Rate, color = Type, group = Type)) +
+  geom_hline(yintercept = seq(0, 20, 5), color = "grey90", size = 0.3, alpha = 0.7) +
+  geom_line(size = 1.5, alpha = 0.9) +
+  geom_point(size = 3.5, alpha = 0.95) +
+  labs(
+    title = "Armenia Unemployment Rate: Historical Data & Projections",
+    subtitle = "Real unemployment rates (2014-2024) and predicted values (2025)",
+    x = "Year",
+    y = "Unemployment Rate (%)",
+    color = "Data Type"
+  ) +
+  scale_color_manual(
+    values = c("Real" = "#2E86AB", "Predicted" = "#ff7b17"),
+    labels = c("Predicted" = "Predicted (2025)", "Real" = "Historical Data")
+  ) +
+  scale_y_continuous(
+    breaks = seq(10, 20, 3),
+    limits = c(10, max(long_data$Rate, na.rm = TRUE) * 1.1),
+    labels = function(x) paste0(x, "%")
+  ) +
+  scale_x_discrete(breaks = as.character(valid_years)) + theme_lfs()
+```
+
+
+The income distribution of migrants over time provides valuable insights into the broader working conditions they experience. Our analysis shows that the median income of migrants has remained relatively stable across the years, suggesting that core aspects of their employment—such as the types of jobs held, working hours, and pay structures—have not seen significant improvement. This stability indicates that, for most migrants, the quality of their employment has remained largely unchanged.
+
+However, the consistent presence of income inequality among migrants, demonstrated by a wide spread in earnings, highlights unequal access to better-paying and more secure jobs. A considerable portion of migrants are likely employed in low-paid, informal, or unstable positions, which offer limited benefits and protections. At the same time, a smaller but important group of migrants occupies formal or skilled roles that provide higher wages and generally better working conditions.
+
+The noticeable reduction in income spread during 2020 can be linked to the impact of external shocks such as the COVID-19 pandemic. This period saw worsening working conditions for many, including job losses, reduced working hours, and decreased earnings. Conversely, after 2021, there was a modest increase in earnings among the higher-income migrants. This suggests that some individuals were able to transition into better-paying roles, possibly due to increased demand in specific sectors or improvements in employment rights. Nevertheless, this positive trend did not extend to all migrants, underscoring the ongoing segmentation and inequality within migrant labor markets.
+```{r}
+income_migrants <- lfs_all %>%
+  filter(C4 == 1, !is.na(E14_1), E14_1 > 0, E14_1 < 2e6) 
+
+ggplot(income_migrants, aes(x = factor(year), y = E14_1)) +
+  geom_boxplot(fill = "#0391b5", outlier.alpha = 0.3) +
+  scale_y_log10(labels = scales::comma_format()) +
+  labs(
+    title = "Monthly Income (Log Scale) of Migrants by Year",
+    subtitle = "Distribution of migrant monthly income (AMD) over time, excluding outliers",
+    x = "Year", y = "Monthly Income (AMD)",
+    caption = "Note: Income values filtered to exclude zero and extreme outliers; log scale applied for better visualization.") + theme_lfs()
+
+```
+
+
+The occupational profile of Armenian migrants sheds valuable light on the broader dynamics of the country’s labor migration. Notably, elementary and craft workers together account for over 30% of migrants, highlighting a substantial outflow of low- to mid-skilled labor. This trend suggests that workers in these categories face limited job opportunities, poor wages, and challenging working conditions within Armenia, driving many to seek employment elsewhere. The loss of these workers may have significant implications for industries reliant on these skill levels.
+
+Simultaneously, the migration of technicians, professionals, and managers—although smaller in number—points to a concerning ongoing brain drain. This outflow of skilled and educated workers threatens to deprive Armenia of essential human capital needed for innovation, entrepreneurship, and sustainable economic growth. The departure of such workers can hinder technological advancement and limit the country’s ability to compete in knowledge-based sectors.
+
+The wide distribution of migrants across nearly all occupational groups underscores systemic issues in Armenia’s labor market. Problems such as low wages, insufficient job security, poor working conditions, and limited career advancement opportunities appear to affect workers regardless of their skill level or professional status. This dual loss—both of low-skilled labor and highly skilled professionals—poses significant challenges for Armenia’s overall productivity, economic development, and long-term competitiveness.
+```{r}
+isco_labels <- c(
+  "1" = "Managers",
+  "2" = "Professionals",
+  "3" = "Technicians",
+  "4" = "Clerks",
+  "5" = "Service/Sales",
+  "6" = "Agricultural",
+  "7" = "Craft",
+  "8" = "Operators",
+  "9" = "Elementary"
+)
+
+lfs_all %>%
+  filter(C4 == 1, !is.na(ISCO)) %>%
+  count(ISCO) %>%
+  mutate(
+    share = n / sum(n),
+    label = factor(isco_labels[as.character(ISCO)], levels = isco_labels)
+  ) %>%
+  ggplot(aes(x = reorder(label, share), y = share)) +
+  geom_col(fill = "#0391b5", width = 0.7) +
+  coord_flip() +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(
+    title = "Migrant Occupations by ISCO Category (All Years)",
+    subtitle = "Distribution of migrants across major occupational groups",
+    x = "Occupation Category",
+    y = "Share of Migrants",
+    caption = "Note: Categories based on ISCO classification; includes migrants from all years"
+  ) + theme_lfs()
+
+```
+
+
+Armenian international migration is overwhelmingly concentrated in one primary destination: Russia. Around 85% of all Armenian migrants moving abroad (excluding internal migration) choose Russia as their destination. In contrast, other regions—including CIS countries excluding Russia, Europe, the USA/Canada, and various other locations—collectively represent only a small fraction of migration flows. This stark concentration reveals a migration pattern heavily focused on Russia, indicating limited geographic dispersal of Armenian migrants worldwide. The dominance of Russia in Armenia’s migration landscape reflects historical, economic, and social ties between the two countries, making it the key hub for Armenian labor and population mobility. Understanding this pattern is essential for designing targeted migration and labor policies. It is important to note that this analysis excludes internal migration within Armenia, focusing solely on international movements.
+```{r}
+dest_labels <- c(
+  "13" = "Russia",
+  "14" = "CIS (except Russia)",
+  "15" = "Europe",
+  "16" = "USA/Canada",
+  "17" = "Other"
+)
+
+custom_colors <- c(
+  "Russia"  = "#37bbca",       
+  "CIS (except Russia)" = "#f9d80f",            
+  "Europe" = "#0391b5",                  
+  "USA/Canada" = "#ff7b17",          
+  "Other" = "#d3de16"
+)
+
+lfs_all %>%
+  filter(C4 == 1, C9 %in% names(dest_labels)) %>%
+  count(C9) %>%
+  mutate(
+    destination = dest_labels[as.character(C9)],
+    share = n / sum(n)
+  ) %>%
+  ggplot(aes(x = "", y = share, fill = destination)) +
+  geom_col(width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  scale_fill_manual(values = custom_colors) +
+  labs(
+    title = "Top Migration Destinations (Excl. Internal)",
+    subtitle = "Share of migrants by destination region",
+    fill = "Destination",
+    caption = "Note: Internal migration destinations excluded"
+  ) +
+  theme_void(base_size = 14) +
+  theme(
+    legend.position = "right",
+    plot.title = element_text(hjust = 0.5)
+  )
+```
+
+
+Between 2018 and 2023, Russia consistently remained the primary destination for Armenian migrants, with the share of migrants choosing Russia fluctuating between approximately 85% and 91%. The peak occurred in 2020, when 91.2% of Armenian migrants selected Russia as their destination. This surge was likely influenced by global factors such as the COVID-19 pandemic, which imposed travel restrictions and limited international mobility, leading many migrants to favor familiar and accessible destinations. Following this peak, the proportion of migrants moving to Russia experienced a slight decline, reaching 84.8% in 2023. Although this marked the lowest share during the period, it still represents a dominant majority of Armenian migrants.
+
+Throughout these years, the share of migrants heading to Russia remained relatively stable. It rose from 87.3% in 2018 to 90.6% in 2019, then experienced modest fluctuations before settling near 85% in 2023. This consistent pattern highlights Russia’s enduring importance as the principal destination for Armenian migrants, despite shifts in global and regional circumstances. The strong migration link between Armenia and Russia reflects deep historical, economic, and social ties, emphasizing the critical role Russia continues to play in shaping Armenia’s migration landscape.
+
+```{r}
+russia_percent <- lfs_all %>%
+  filter(C4 == 1, !is.na(C9)) %>%
+  group_by(year) %>%
+  summarise(
+    total_migrants = n(),
+    to_russia = sum(C9 == 13, na.rm = TRUE),
+    percent = to_russia / total_migrants * 100
+  ) %>%
+  mutate(
+    label_pos = ifelse(year == 2021, percent - 1, percent + 1),
+    label_text = paste0(round(percent, 1), "%")
+  )
+
+ggplot(russia_percent, aes(x = year, y = percent)) +
+  geom_line(color = "#0391b5", size = 1.2) +
+  geom_point(color = "#ff7b17", size = 4) +
+  geom_text(aes(y = label_pos, label = label_text),
+            fontface = "bold", size = 4, color = "black") +
+  labs(
+    title = "Share of Migrants Who Moved to Russia by Year",
+    subtitle = "Percentage of migration cases per year going to Russia",
+    x = "Year",
+    y = "Percentage of Migration Cases"
+  ) +
+  scale_y_continuous(labels = function(x) paste0(x, "%"), limits = c(80, 95)) + theme_lfs()
+```
+
+```{r, results = "hide"}
+lfs_all %>%
+  group_by(year) %>%
+  summarise(
+    total_people = n(),
+    migrants = sum(C4 == 1, na.rm = TRUE),
+    migration_rate = migrants / total_people
+  ) %>%
+  mutate(
+    migration_rate = scales::percent(migration_rate, accuracy = 0.01)
+  )
+```
+Between 2013 and 2024, the level of interest in temporary migration among Armenians exhibited notable fluctuations, generally ranging between approximately 40% and 58%. The highest levels of willingness to migrate temporarily were observed in 2013, 2015, and 2017, with nearly 58% of respondents indicating openness to temporary migration during these peak years. These surges can be linked to a combination of factors, including economic hardships, regional political instability, and widespread dissatisfaction with employment opportunities and job conditions. Such challenges likely intensified migration pressures, prompting more individuals to consider moving abroad temporarily in search of better prospects.
+
+In contrast, the lowest interest in temporary migration was recorded in 2019, when roughly 43% of respondents expressed willingness to migrate. This decline coincides with a period of increased optimism following the 2018 Velvet Revolution, which brought hopes for political reform, improved governance, and positive economic changes. However, this optimistic trend was not sustained, as by 2024 the interest in temporary migration increased once again to approximately 53%. This resurgence may be attributed to the lasting economic impact of the COVID-19 pandemic, which disrupted livelihoods worldwide, along with renewed regional conflicts, such as the 2020 Nagorno-Karabakh war, which created uncertainty and instability in Armenia and its surroundings.
+
+These fluctuations in migration intentions underscore the complex and dynamic nature of migration decision-making. They demonstrate that the willingness to migrate is highly responsive to shifting social, economic, and political contexts, rather than being a fixed or static sentiment. Understanding and tracking these changing attitudes toward migration over time is essential for policymakers and researchers alike. Such insights can help anticipate future migration trends, design targeted interventions to address the root causes of migration pressures, and support strategies aimed at improving economic opportunities and social stability within Armenia.
+```{r}
+process_migshrt <- function(file, year) {
+  data <- if (str_ends(file, ".csv")) read_csv(file, show_col_types = FALSE) else read_excel(file)
+  colnames(data) <- toupper(colnames(data))
+
+  if (!"MIGSHRT" %in% names(data)) {
+    warning(paste("Skipping year", year, "- MIGSHRT column missing"))
+    return(NULL)
+  }
+
+  if ("COUNTRY" %in% names(data)) {
+    data <- data %>% filter(COUNTRY == 1)
+  }
+
+  data %>%
+    filter(MIGSHRT %in% c(0, 1, -1, -2)) %>%
+    mutate(Response = case_when(
+      MIGSHRT == 1 ~ "Yes",
+      MIGSHRT == 0 ~ "No"
+    )) %>%
+    filter(!is.na(Response)) %>%  
+    count(Response) %>%
+    mutate(Year = as.integer(year)) %>%
+    group_by(Year) %>%
+    mutate(Percent = round(n / sum(n) * 100, 1)) %>%
+    select(Year, Response, Percent)
+}
+
+migshrt_all_years_pct <- map2_df(file_years, names(file_years), process_migshrt)
+
+ggplot(migshrt_all_years_pct, aes(x = factor(Year), y = Percent, fill = Response)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  scale_fill_manual(values = c("Yes" = "#0391b5", "No" = "#ff7b17")) +
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(
+    title = "Temporary Migration Intent (2013–2024)",
+    subtitle = "Percentage of respondents who expressed willingness to temporarily migrate",
+    x = "Year",
+    y = "Percent",
+    fill = "Response",
+    caption = "Note: Includes only responses with valid migration intent"
+  ) +
+  theme_lfs()
+
+
+```
+Armenians consistently show greater interest in temporary migration than in permanent emigration. In most years, nearly half of respondents express a willingness to migrate temporarily, while a considerably smaller share report a desire to leave Armenia permanently. Interest in permanent emigration has typically ranged from around 20% to higher levels in certain years, reflecting a stable yet significant portion of the population considering long-term departure. Over the period from 2013 to 2024, permanent migration intent has remained substantial, with some fluctuations. The peak occurred around 2017, possibly due to rising economic or political uncertainties at the time, while by 2024, interest remains notable despite changing national and global conditions. In summary, although interest in permanent migration varies from year to year, it continues to represent a meaningful part of Armenia’s migration dynamics. This stands in contrast to the more variable and generally higher interest in temporary migration, underlining that permanent emigration remains a persistent concern in the country’s migration landscape.
+```{r}
+process_emigrat <- function(file, year) {
+  data <- if (str_ends(file, ".csv")) read_csv(file, show_col_types = FALSE) else read_excel(file)
+  colnames(data) <- toupper(colnames(data))
+
+  if (!"EMIGRAT" %in% names(data)) {
+    warning(paste("Skipping year", year, "- EMIGRAT column missing"))
+    return(NULL)
+  }
+
+  if ("COUNTRY" %in% names(data)) {
+    data <- data %>% filter(COUNTRY == 1)
+  }
+
+  data %>%
+    filter(EMIGRAT %in% c(0, 1)) %>%  
+    mutate(Response = case_when(
+      EMIGRAT == 1 ~ "Yes",
+      EMIGRAT == 0 ~ "No"
+    )) %>%
+    count(Response) %>%
+    mutate(Year = as.integer(year)) %>%
+    group_by(Year) %>%
+    mutate(Percent = round(n / sum(n) * 100, 1)) %>%
+    select(Year, Response, Percent)
+}
+
+emigrat_all_years_pct <- map2_df(file_years, names(file_years), process_emigrat)
+
+ggplot(emigrat_all_years_pct, aes(x = factor(Year), y = Percent, fill = Response)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  scale_fill_manual(values = c(
+    "Yes" = "#0391b5",
+    "No" = "#ff7b17"
+  )) +
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(
+    title = "Permanent Emigration Intent (2013–2024)",
+    subtitle = "Share of respondents indicating willingness to permanently emigrate",
+    x = "Year",
+    y = "Percent",
+    fill = "Response",
+    caption = "Note: Includes only valid responses from residents"
+  ) +
+  theme_lfs()
+
+```
+From 2013 to 2024, individuals considering emigration in Armenia come from a wide range of educational backgrounds, including higher education, secondary education, and secondary technical education. The notable presence of those holding bachelor’s and postgraduate degrees highlights a significant issue of “brain drain,” where the loss of educated professionals can hinder the country’s economic growth and innovation capacity. Overall, the desire to emigrate spans all education levels, indicating that migration affects people with diverse skills and qualifications. Addressing these challenges requires policies focused on retaining skilled professionals and improving opportunities for all, regardless of educational attainment.
+```{r}
+process_emigrat_edu <- function(file, year) {
+  data <- if (str_ends(file, ".csv")) read_csv(file, show_col_types = FALSE) else read_excel(file)
+  colnames(data) <- toupper(colnames(data))
+  
+  if (!all(c("EMIGRAT", "RESPEDU") %in% names(data))) {
+    warning(paste("Skipping year", year, "- EMIGRAT or RESPEDU column missing"))
+    return(NULL)
+  }
+
+  if ("COUNTRY" %in% names(data)) {
+    data <- data %>% filter(COUNTRY == 1)
+  }
+
+  data %>%
+    filter(EMIGRAT == 1) %>%  
+    mutate(
+      RESPEDU_CLEAN = case_when(
+        RESPEDU %in% -2:-1 ~ "Other",
+        RESPEDU == 1 ~ "No Primary",
+        RESPEDU == 2 ~ "Primary",
+        RESPEDU == 3 ~ "Incomplete Secondary",
+        RESPEDU == 4 ~ "Completed Secondary",
+        RESPEDU == 5 ~ "Secondary Technical",
+        RESPEDU == 6 ~ "Incomplete Higher",
+        RESPEDU == 7 ~ "Completed Higher",
+        RESPEDU == 8 ~ "Postgraduate",
+        TRUE ~ "Other"
+      ),
+      Year = as.integer(year)
+    ) %>%
+    select(Year, RESPEDU_CLEAN)
+}
+
+emigrat_edu_all <- map2_df(file_years, names(file_years), process_emigrat_edu)
+
+ggplot(emigrat_edu_all, aes(x = "", y = RESPEDU_CLEAN)) +
+  geom_jitter(width = 0.5, alpha = 0.6, color = "#0391b5", size = 1.5) +
+  facet_wrap(~ Year, nrow = 1) + 
+  labs(
+    title = "Education Levels of Respondents Wanting to Emigrate (2013–2024)",
+    subtitle = "Distribution of education levels among those indicating permanent emigration intent",
+    y = "Education Level",
+    x = "",
+    caption = "Note: Includes only those who intend to emigrate and are residents"
+  ) +
+  scale_y_discrete(
+    limits = c(
+      "Other",
+      "No Primary",
+      "Primary",
+      "Incomplete Secondary",
+      "Completed Secondary",
+      "Secondary Technical",
+      "Incomplete Higher",
+      "Completed Higher",
+      "Postgraduate"
+    )
+  ) +
+  theme_lfs()
+
+```
+Among individuals planning to emigrate permanently from Armenia, approximately 31% are currently employed, which indicates that the decision to migrate is not limited to those who are unemployed. This challenges the common perception that only jobless individuals seek to leave the country. Additionally, about 25% of prospective migrants are not working by choice, suggesting that a significant portion of those interested in emigration are economically inactive due to personal preference rather than necessity. This group may include students, homemakers, or others who are voluntarily out of the labor force but still consider migration as a future option.
+
+Unemployed individuals constitute around 20% of those planning to migrate permanently, highlighting that while unemployment is indeed an important factor, it is not the sole driver of migration decisions. Retirees make up 12%, reflecting that even older populations consider migration for reasons that may include family reunification or better living conditions. About 9% are self-employed, representing small business owners or freelancers, and a small proportion of just over 2% falls into an “Other” category, which may include diverse or unspecified employment statuses.
+
+This varied economic profile illustrates that intentions to emigrate permanently cut across different employment statuses and life circumstances. The significant presence of both employed individuals and those voluntarily inactive suggests that broader factors beyond simple joblessness play an important role in motivating migration. These factors likely include dissatisfaction with job quality, limited opportunities for career advancement, economic insecurity, and personal or family considerations. Taken together, this complexity shows that efforts to address migration pressures in Armenia must go beyond tackling unemployment alone and consider the broader economic and social context influencing individuals’ decisions to seek opportunities abroad.
+```{r}
+process_emigrat_emplsit_total <- function(file, year) {
+  data <- if (str_ends(file, ".csv")) read_csv(file, show_col_types = FALSE) else read_excel(file)
+  colnames(data) <- toupper(colnames(data))
+  
+  if (year == "2024" && "EMPLSIT_1" %in% names(data)) {
+    data <- data %>% rename(EMPLSIT = EMPLSIT_1)
+  }
+  
+  if (!all(c("EMIGRAT", "EMPLSIT") %in% names(data))) return(NULL)
+
+  if ("COUNTRY" %in% names(data)) {
+    data <- data %>% filter(COUNTRY == 1)
+  }
+
+  data %>%
+    filter(EMIGRAT == 1, EMPLSIT %in% c(1:8, -1, -2)) %>%
+    mutate(
+      Activity = case_when(
+        EMPLSIT == 1 ~ "Retired and not working",
+        EMPLSIT == 2 ~ "Student and not working",
+        EMPLSIT == 3 ~ "Not working by choice",
+        EMPLSIT == 4 ~ "Unemployed",
+        EMPLSIT == 5 ~ "Working",
+        EMPLSIT == 6 ~ "Self-employed",
+        EMPLSIT == 7 ~ "Disabled",
+        EMPLSIT %in% c(8, -1, -2) ~ "Other"
+      )
+    ) %>%
+    count(Activity)
+}
+
+all_data <- map2_dfr(file_years, names(file_years), process_emigrat_emplsit_total)
+
+summary_data <- all_data %>%
+  mutate(
+    Activity = case_when(
+      Activity %in% c("Student and not working", "Not working by choice") ~ "Not working by choice",
+      Activity %in% c("Disabled", "Other") ~ "Other",
+      TRUE ~ Activity
+    )
+  ) %>%
+  group_by(Activity) %>%
+  summarise(n = sum(n), .groups = "drop") %>%
+  mutate(
+    Percent = round(n / sum(n) * 100, 1),
+    label = paste0(Percent, "%")
+  )
+
+custom_colors <- c(
+  "Retired and not working" = "#37bbca",
+  "Not working by choice"   = "#f9d80f",
+  "Unemployed"              = "#ff7b17",
+  "Working"                 = "#0391b5",
+  "Self-employed"           = "#d3de16",
+  "Other"                   = "#95A5A6"
+)
+
+ggplot(summary_data, aes(x = 2, y = n, fill = Activity)) +
+  geom_col(color = "white") +
+  coord_polar(theta = "y") +
+  xlim(0.5, 2.5) +
+  geom_text(aes(label = label), position = position_stack(vjust = 0.5), size = 3.5) +
+  scale_fill_manual(values = custom_colors) +
+  labs(
+    title = "Total Distribution of Emigrant Activities (2013–2024)",
+    subtitle = "Based on total number of respondents with permanent emigration intent"
+  ) +
+  theme_void(base_size = 13) +
+  theme(
+    legend.position = "right",
+    legend.title = element_blank(),
+    plot.caption = element_text(size = 10)
+  )
+
+```
+Over time, shifts have occurred in which employment groups show the strongest intent to emigrate. In 2017, state employees were more likely to want to leave Armenia than private sector workers, but this trend reversed soon after. Between 2017 and 2019, emigration intent decreased across all groups, possibly reflecting the optimism sparked by the 2018 Velvet Revolution and the subsequent change in government. However, since 2019, emigration intent has been rising again, suggesting that the initial positive effects of the revolution may be diminishing. Private sector employees continue to exhibit the highest emigration intent, although the gap between them and state employees has narrowed.  
+Self-employed individuals and those classified as “Other” constitute smaller but consistent groups. Overall, the data reveals growing dissatisfaction across all types of employment, highlighting that improving job quality—beyond just increasing job availability—is crucial to reducing migration pressures.
+```{r}
+
+process_emigrat_worktyp <- function(file, year) {
+  data <- if (str_ends(file, ".csv")) read_csv(file, show_col_types = FALSE) else read_excel(file)
+  colnames(data) <- toupper(colnames(data))
+
+  if (!all(c("EMIGRAT", "WORKTYP") %in% names(data))) {
+    warning(paste("Skipping year", year, "- required columns missing"))
+    return(NULL)
+  }
+
+  if ("COUNTRY" %in% names(data)) {
+    data <- data %>% filter(COUNTRY == 1)
+  }
+
+  if (year == "2024") {
+    data <- data %>%
+      mutate(WORKTYP = ifelse(WORKTYP == 999, 8, WORKTYP))
+  }
+
+  data %>%
+    filter(WORKTYP %in% 1:8, EMIGRAT == 1) %>%
+    mutate(
+      WorkType = factor(WORKTYP, levels = 1:8, labels = c(
+        "Self-employed (no employees)",
+        "Self-employed (with employees)",
+        "Employee (family/household business)",
+        "Employee (private org)",
+        "Employee (state org)",
+        "Employee (foreign org)",
+        "Employee (NGO)",
+        "Other"
+      )),
+      WorkGroup = case_when(
+        WorkType %in% c(
+          "Self-employed (with employees)",
+          "Employee (family/household business)",
+          "Employee (foreign org)",
+          "Employee (NGO)"
+        ) ~ "Other",
+        TRUE ~ as.character(WorkType)
+      )
+    ) %>%
+    count(Year = as.integer(year), WorkGroup) %>%
+    group_by(Year) %>%
+    mutate(Percent = round(n / sum(n) * 100, 1)) %>%
+    ungroup()
+}
+
+emigrat_yes_only <- map2_df(file_years, names(file_years), process_emigrat_worktyp)
+
+custom_colors <- c(
+  "Self-employed (no employees)" = "#0391b5",
+  "Employee (private org)"       = "#ff7b17",
+  "Employee (state org)"         = "#d3de16",
+  "Other"                        = "#f9d80f"
+)
+
+ggplot(emigrat_yes_only, aes(
+  x = as.factor(Year),
+  y = Percent,
+  fill = WorkGroup
+)) +
+  geom_col(width = 0.7, position = position_dodge2(width = 0.8, preserve = "single")) +
+  labs(
+    title = "Employment Types Among Those Willing to Emigrate",
+    subtitle = "Grouped by work status across all survey years (2013–2024)",
+    caption = "Note: Includes only residents who expressed permanent emigration intent.",
+    x = "Year",
+    y = "Percentage",
+    fill = "Employment Type"
+  ) +
+  scale_fill_manual(values = custom_colors) +
+  theme_lfs()
+```
+The relationship between job satisfaction and the desire to permanently leave Armenia shows a clear inverse pattern. Individuals who report being very dissatisfied with their jobs have emigration intent rates exceeding 35%, while those who are very satisfied report rates below 25%. This suggests that job satisfaction plays a meaningful role in shaping migration intentions. The data provides strong evidence that improving working conditions and job satisfaction could be an effective way to reduce pressure to emigrate.
+```{r}
+pick_col <- function(df, candidates, to){
+  hit <- candidates[candidates %in% names(df)][1]
+  if (!is.na(hit)) dplyr::rename(df, !!to := dplyr::all_of(hit)) else df
+}
+
+lab_jobsarfn <- c(
+  "1" = "Very dissatisfied",
+  "2" = "Somewhat dissatisfied",
+  "3" = "Average",
+  "4" = "Somewhat satisfied",
+  "5" = "Very satisfied"
+)
+
+order_levels <- c(
+  "Very dissatisfied",
+  "Somewhat dissatisfied",
+  "Average",
+  "Somewhat satisfied",
+  "Very satisfied"
+)
+
+process_emigrat_jobsat <- function(file, year, verbose = TRUE) {
+  dat <- if (str_ends(file, "\\.csv$")) {
+    readr::read_csv(file, show_col_types = FALSE)
+  } else {
+    readxl::read_excel(file)
+  }
+  names(dat) <- toupper(trimws(names(dat)))
+
+  dat <- dat %>%
+    pick_col(c("EMIGRAT","MIGPERM","EMIGRATE","EMIGR","LEAVEFOREVER","LEAVE_FOR_EVER"), "EMIGRAT") %>%
+    pick_col(c("JOBSARFN","JOBSAT","JOB_SAT","JOBSATISF","SATJOB","JOB SATISFACTION"), "JOBSARFN") %>%
+    pick_col(c("WT","WEIGHT","WGT","SAMPWEIGHT"), "WT")
+
+  missing <- setdiff(c("EMIGRAT","JOBSARFN"), names(dat))
+  if (length(missing)){
+    if (verbose) message(sprintf("[%s] Skipped: missing %s", year, paste(missing, collapse = ", ")))
+    return(tibble(year = character(), JOBSAT_L = factor(), yes = double(), tot = double(), rate = double())[0,])
+  }
+
+  dat <- dat %>%
+    mutate(
+      EMIGRAT = dplyr::case_when(
+        EMIGRAT %in% c(-1,-2,-3) ~ NA_real_,
+        EMIGRAT %in% c("YES","Yes","Y",1) ~ 1,
+        EMIGRAT %in% c("NO","No","N",0,2) ~ 0,
+        TRUE ~ suppressWarnings(as.numeric(EMIGRAT))
+      ),
+      JOBSARFN = as.character(JOBSARFN)
+    ) %>%
+    filter(EMIGRAT %in% c(0,1), JOBSARFN %in% names(lab_jobsarfn)) %>%
+    mutate(JOBSAT_L = factor(JOBSARFN, levels = names(lab_jobsarfn), labels = lab_jobsarfn))
+
+  if (nrow(dat) == 0) {
+    if (verbose) message(sprintf("[%s] Skipped: 0 usable rows after filters", year))
+    return(tibble(year = character(), JOBSAT_L = factor(), yes = double(), tot = double(), rate = double())[0,])
+  }
+
+  dat %>%
+    group_by(JOBSAT_L) %>%
+    summarise(
+      yes = if ("WT" %in% names(cur_data())) sum(WT[EMIGRAT == 1], na.rm = TRUE) else sum(EMIGRAT == 1, na.rm = TRUE),
+      tot = if ("WT" %in% names(cur_data())) sum(WT, na.rm = TRUE) else dplyr::n(),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = 100 * yes / tot, year = as.character(year))
+}
+
+tab_all <- purrr::map2_dfr(unname(file_years), names(file_years), process_emigrat_jobsat)
+if (nrow(tab_all) == 0) stop("No data made it through. Check column names/codes in the source files.")
+
+overall_1319 <- tab_all %>%
+  group_by(JOBSAT_L) %>%
+  summarise(yes = sum(yes, na.rm = TRUE), tot = sum(tot, na.rm = TRUE), .groups = "drop") %>%
+  mutate(rate = 100 * yes / tot) %>%
+  mutate(JOBSAT_L = factor(JOBSAT_L, levels = order_levels)) %>%
+  arrange(JOBSAT_L)
+
+custom_colors <- c(
+  "Very dissatisfied"     = "#37bbca",  
+  "Somewhat dissatisfied" = "#f9d80f",  
+  "Average"               = "#ff7b17",
+  "Somewhat satisfied"    = "#d3de16",  
+  "Very satisfied"        = "#0391b5"   
+)
+
+ggplot(overall_1319, aes(x = JOBSAT_L, y = rate, fill = JOBSAT_L)) +
+  geom_col(width = 0.7, alpha = 0.9) +
+  geom_text(
+    aes(label = sprintf("%.1f%%", rate)),
+    vjust = -0.2, size = 4.2, fontface = "bold", color = "#2c3e50"
+  ) +
+  geom_smooth(aes(y = rate, group = 1),
+              method = "loess", se = TRUE,
+              color = "#e74c3c", fill = "#ffebee",
+              alpha = 0.25, size = 1.6, span = 0.9) + 
+  scale_fill_manual(values = custom_colors, guide = guide_legend(title = "Job Satisfaction")) +
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  coord_cartesian(ylim = c(0, max(overall_1319$rate) * 1.15)) +
+  labs(
+    title = "Permanent Emigration Intent by Job Satisfaction (2013–2019 Combined)",
+    subtitle = "Grouped by self-reported satisfaction levels with current job",
+    x = "Job Satisfaction Level",
+    y = "Percentage (%)"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme_lfs()
+```
+
+## Conclusion
+
+The findings indicate that Armenian migration cannot be fully understood through unemployment figures alone. A significant portion of migrants are employed but underpaid or dissatisfied, which points to poor job quality as a core issue. Migration becomes a rational response to these conditions, with stable median incomes masking the deep income disparities among migrants. Without structural improvements in Armenia's labor market—especially around wage equity, workplace protections, and career development—migration is likely to remain high, especially among the country’s most economically active citizens.
+
+## Acknowledgments
+We would like to express our sincere gratitude to the Caucasus Research Resource Center (CRRC) for their support and guidance throughout this project. Their team kindly held two meetings with us, during which they provided valuable feedback and helped us shape our analysis ideas. Their insights significantly contributed to the direction and depth of our research.
+
+
+## Reference. 
+CaucasusBarometer.org | Online data analysis. (n.d.). https://caucasusbarometer.org/en/   
+Helix Consulting LLC. (n.d.). Programs - Republic of Armenia 2014-2025 Strategic Program of Prospective Development - The Government of the Republic of Armenia. https://www.gov.am/en/prsp   
+Kipp, A. (n.d.). Shiny. Shiny https://shiny.posit.co/r/articles/share/shinyapps/ 
+TRADING ECONOMICS. (n.d.). Armenia unemployment rate. https://tradingeconomics.com/armenia/unemployment-rate 
+Statistical Committee of the Republic of Armenia. (n.d.). Labor force survey anonymized microdata and questionnaire (by household members). https://www.armstat.am/am/?nid=212
+
+
+
